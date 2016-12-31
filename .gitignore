@@ -212,3 +212,5 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 GreekTVRadio_StoreKey.pfx
+BundleArtifacts/
+Package.StoreAssociation.xml
