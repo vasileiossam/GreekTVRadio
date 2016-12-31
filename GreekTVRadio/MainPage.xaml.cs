@@ -17,6 +17,9 @@ namespace GreekTVRadio
 {
     public sealed partial class MainPage : Page
     {
+        /// <summary>
+        /// http://www.livetvgreece.com/
+        /// </summary>
         private List<Station> _stations = new List<Station>
         {
             new Station()
@@ -33,8 +36,26 @@ namespace GreekTVRadio
             },
             new Station()
             {
-                Name = "ERT 1 WORLDWIDE",
-                Url = "https://www.youtube.com/embed/Zx98moCvkpU?rel=0&autoplay=1",
+                Name = "ERT 1",
+                Url = "http://webtv.ert.gr/ert1/",
+                IsTV = true
+            },
+            new Station()
+            {
+                Name = "ERT 2",
+                Url = "http://webtv.ert.gr/ert2/",
+                IsTV = true
+            },
+            new Station()
+            {
+                Name = "ERT 3",
+                Url = "http://webtv.ert.gr/ert3/",
+                IsTV = true
+            },
+            new Station()
+            {
+                Name = "ERT WORLD",
+                Url = "http://webtv.ert.gr/ertworld/",
                 IsTV = true
             },
             new Station()
