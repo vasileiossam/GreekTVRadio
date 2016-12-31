@@ -1,2 +1,0 @@
-MainPackage=T:\dev\GreekTVRadio\GreekTVRadio\bin\x64\Release\Upload\GreekTVRadio_1.1.0.0_x64.appx
-SymbolPackage=T:\dev\GreekTVRadio\GreekTVRadio\AppPackages\GreekTVRadio_1.1.0.0\GreekTVRadio_1.1.0.0_x64.appxsym
