@@ -1,0 +1,84 @@
+﻿[
+  {
+    "Name": "ERT 1",
+    "Url": "http://webtv.ert.gr/ert1/",
+    "IsTV": true
+  },
+  {
+    "Name": "ERT 2",
+    "Url": "http://webtv.ert.gr/ert2/",
+    "IsTV": true
+  },
+  {
+    "Name": "ERT 3",
+    "Url": "http://webtv.ert.gr/ert3/",
+    "IsTV": true
+  },
+  {
+    "Name": "ERT WORLD",
+    "Url": "http://webtv.ert.gr/ertworld/",
+    "IsTV": true
+  },
+  {
+    "Name": "Sky",
+    "Url": "https://www.youtube.com/watch?v=7f6k_zED6vk",
+    "IsTV": true
+  },
+  {
+    "Name": "Alpha",
+    "Url": "http://www.alphatv.gr/webtv/live",
+    "IsTV": true
+  },
+  {
+    "Name": "Mega",
+    "Url": "https://www.youtube.com/watch?v=2Y8qsS_xH2Y",
+    "IsTV": true
+  },
+  //{
+  //  "Name": "Mega Cy",
+  //  "Url": "http://www.megatv.com.cy/live/?cs=1",
+  //  "IsTV": true
+  //},
+  {
+    "Name": "Epsilon",
+    "Url": "http://www.epsilontv.gr/livetv/",
+    "IsTV": true
+  },
+  {
+    "Name": "Kontra",
+    "Url": "http://live24.gr/webtv/kontrachannel/",
+    "IsTV": true
+  },
+  {
+    "Name": "Star",
+    "Url": "http://www.star.gr/tv/el/Pages/LiveStream.aspx",
+    "IsTV": true
+  },
+
+
+  {
+    "Name": "RealFM 97.8",
+    "Url": "http://live24.gr/radio/realfm.jsp",
+    "IsTV": false
+  },
+  {
+    "Name": "ΠΡΩΤΟ ΠΡΟΓΡΑΜΜΑ",
+    "Url": "http://webradio.ert.gr/proto/",
+    "IsTV": false
+  },
+  {
+    "Name": "ΔΕΥΤΕΡΟ ΠΡΟΓΡΑΜΜΑ",
+    "Url": "http://webradio.ert.gr/deftero/",
+    "IsTV": false
+  },
+  {
+    "Name": "TΡΙΤΟ ΠΡΟΓΡΑΜΜΑ",
+    "Url": "http://webradio.ert.gr/trito/",
+    "IsTV": false
+  },
+  {
+    "Name": "Η ΦΩΝΗ ΤΗΣ ΕΛΛΑΔΑΣ",
+    "Url": "http://webradio.ert.gr/trito/",
+    "IsTV": false
+  }
+]

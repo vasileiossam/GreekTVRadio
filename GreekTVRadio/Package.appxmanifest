@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="28819Ozschooltek.GreekTV" Publisher="CN=530646BD-E369-4D0D-A3D5-90CE5C277063" Version="1.1.0.0" />
+  <Identity Name="28819Ozschooltek.GreekTV" Publisher="CN=530646BD-E369-4D0D-A3D5-90CE5C277063" Version="1.2.0.0" />
   <mp:PhoneIdentity PhoneProductId="7cb801cb-68b6-4b88-8d4a-3ca9495e1d11" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Greek TV Radio</DisplayName>

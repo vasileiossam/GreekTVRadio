@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -24,6 +25,11 @@ namespace GreekTVRadio
     sealed partial class App : Application
     {
         /// <summary>
+        /// http://www.livetvgreece.com/
+        /// </summary>
+        public static List<Station> Stations = new List<Station>();
+
+        /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
@@ -33,13 +39,23 @@ namespace GreekTVRadio
             this.Suspending += OnSuspending;
         }
 
+        private async Task LoadStations()
+        {
+            if ((Stations == null) || (Stations.Count == 0))
+            {
+                var storage = new Storage();
+                Stations = await storage.GetStations();
+            }
+        }
+
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        async protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
+            await LoadStations();
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -57,7 +73,7 @@ namespace GreekTVRadio
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application
                 }
@@ -66,14 +82,14 @@ namespace GreekTVRadio
                 Window.Current.Content = rootFrame;
             }
 
-            if (e.PrelaunchActivated == false)
+            if (args.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)
                 {
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(MainPage), args.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
