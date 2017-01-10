@@ -7,12 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel  Grid.Column="0" x:Name="TvPanel" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="15"></StackPanel>
-        <StackPanel  Grid.Column="1" x:Name="RadioPanel" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="15"></StackPanel>
-    </Grid>
+    <ScrollViewer>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel  Grid.Column="0" x:Name="TvPanel" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="15"></StackPanel>
+            <StackPanel  Grid.Column="1" x:Name="RadioPanel" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="15"></StackPanel>
+        </Grid>
+    </ScrollViewer>
 </Page>
